@@ -1,0 +1,17 @@
+INSERT INTO artist (name)
+VALUES ('John'),('NICK'),('MOE')
+
+SELECT name FROM artist
+FETCH FIRST 10 ROWS ONLY
+
+SELECT name FROM artist
+ORDER BY name
+FETCH FIRST 10 ROWS ONLY
+
+SELECT name FROM artist
+WHERE name LIKE 'B%'
+FETCH FIRST 10 ROWS ONLY
+
+SELECT name FROM artist
+WHERE name LIKE '%Black%'
+FETCH FIRST 10 ROWS ONLY
